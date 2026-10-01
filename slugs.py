@@ -3,4 +3,5 @@ SLUGS = {
     "ADG": "HSDDigitalLabor/problems/adg2026/",
     "PRAK": "HSDDigitalLabor/problems/prak2026/",
     "DIGINFO": "HSDDigitalLabor/problems/diginfo2026/",
+    "DIGINFOHDL": "HSDDigitalLabor/problems_hdl/diginfo2026/",
 }
