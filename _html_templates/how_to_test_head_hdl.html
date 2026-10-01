@@ -1,0 +1,11 @@
+<h2 id="how-to-test">So testen Sie Ihren Code</h2>
+<p>So können Sie Ihr Programm manuell simulieren und testen:</p>
+<p>Sie können das folgende Kommando ausführen, um Ihren Code mit <code
+  class="text-danger">simulation</code> zu überprüfen, einem lokalen VHDL-Simulator (GHDL), welcher ihren Code kompiliert, simuliert und mit einer hinterlegten Test Bench prüft.</p>
+
+{% set command="simulation " + slug + foldername %}
+{% include "command_box_with_cp.html" %}
+
+<p>Nach der Simulation liegt eine Waveform-Datei (.vcd) in ihrem Arbeitsverzeichnis: <code>{{foldername}}_waveform.vcd</code><br>
+Öffnen Sie diese mit einem Doppelklick auf <code>{{foldername}}_waveform.vcd</code> und fügen Sie die gewünschten Signale zur Betrachtung hinzu: 
+<code class="text-danger">Add signals from the Netlist View</code> &rarr; Rechtsklick auf <code>{{foldername}}_tb</code> &rarr; <code>Add All Variables in Scope (Shallow)</code>. Betrachten Sie die Waveforms und suchen Sie ggf. Fehler. Nutzen Sie die Zoom-funktion um die gesamten Waveforms darzustellen. Passen sie ggf. die Skalierung der Zeitleiste mit einem Rechtsklick auf diese an: <code>Time Unit</code></p>
